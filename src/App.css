@@ -1,0 +1,171 @@
+/* globals.css */
+
+body {
+
+    @apply bg-white;
+
+}
+  
+.dark body {
+
+    @apply bg-general-body-darkmode-color;
+
+}
+
+/* Other Site's Styles: */
+
+.container {
+
+    position: relative;
+    width: 50%;
+
+}
+
+.image {
+
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+
+}
+
+.middle {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.container:hover .image {
+
+    opacity: 1;
+
+}
+
+.container:hover .middle {
+
+    opacity: 1;
+
+}
+
+#phone-num {
+
+    font-family: sans-serif;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+#phone-num:hover {
+
+    color: black;
+    font-size: 18px;
+    transition: .5s ease;
+    text-decoration: none;
+
+}
+
+#email {
+    
+    font-family: sans-serif;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+#email:hover {
+
+    color: black;
+    font-size: 18px;
+    transition: .5s ease;
+    text-decoration: none;
+
+}
+
+.wrapper-section {
+
+    background-color: #2f363a;
+
+}
+
+#intro-header:hover {
+
+    transform: scale(1.2);
+    text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+#introPara:hover {
+
+    transform: scale(1.2);
+    text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+.sub-header:hover {
+
+    color: black;
+    transform: scale(1.05);
+    text-shadow: 1px;
+    object-fit: cover;
+
+}
+
+.horizontal-row {
+
+    background-color: black;
+    border: solid black;
+    border-width: thin;
+
+}
+
+#last-section-header {
+
+    font-size: 31px;
+
+}
+
+.github-contact-icon {
+
+    font-size: 50px;
+    color: black;
+
+}
+
+.linkedin-contact-icon {
+
+    font-size: 50px;
+    color: #0077b5;
+
+}
+
+.email-contact-icon {
+
+    font-size: 50px;
+    color: #0077b5;
+
+}
+
+.phone-contact-icon {
+
+    font-size: 50px;
+    color: #000;
+
+}
