@@ -13,7 +13,6 @@ import ReactCard from '../SoftSkillsCards/MainSkillsCards/ReactCard';
 import NextJSCard from '../SoftSkillsCards/AdditionalSkillsCards/NextJSCard';
 import TypeScriptCard from '../SoftSkillsCards/AdditionalSkillsCards/TypeScriptCard';
 import JQueryCard from '../SoftSkillsCards/AdditionalSkillsCards/JQueryCard';
-import MySQLCard from '../SoftSkillsCards/AdditionalSkillsCards/MySQLCard';
 import JsonCard from '../SoftSkillsCards/AdditionalSkillsCards/JsonCard';
 
 // Testing, Designing & Styling Skills Cards:
@@ -47,7 +46,7 @@ const SoftSkills = () => {
 
                 <FontAwesomeIcon icon={faArrowDown} className='skill-leading-arrow mb-10 text-black dark:text-white' style={{ width: "35px", height: "40px" }}/>
 
-                <div id={secondWrapperId} className="main-wrapper-box grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 justify-center text-center items-center gap-x-5 gap-y-5 h-sceen mt-5 mb-16">
+                <div id={secondWrapperId} className="main-wrapper-box grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 justify-center text-center items-center gap-x-5 gap-y-5 h-sceen mt-5 mb-16">
 
                     <ReactCard/>
 
@@ -56,8 +55,6 @@ const SoftSkills = () => {
                     <TypeScriptCard/>
 
                     <JQueryCard/>
-
-                    <MySQLCard/>
 
                     <JsonCard/>
 
