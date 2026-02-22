@@ -1,16 +1,9 @@
-// React Hooks Imports:
-
 import { useState, useEffect } from 'react';
-
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
-// Component:
-
 const ScrollToTopBtn = () => {
-
-    // Component's Logic:
 
     const [isVisible, setIsVisible] = useState(false);
 
@@ -59,8 +52,6 @@ const ScrollToTopBtn = () => {
         };
 
     }, []);
-
-    // Component's JSX:
 
     return (
 
@@ -113,7 +104,5 @@ const ScrollToTopBtn = () => {
     );
 
 };
-
-// Component's Export:
 
 export default ScrollToTopBtn;

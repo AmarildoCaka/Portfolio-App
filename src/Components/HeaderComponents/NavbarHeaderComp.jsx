@@ -27,7 +27,7 @@ const NavbarHeaderComp = () => {
     if(section)
     {
 
-        section.scrollIntoView({ behavior: 'smooth' });
+      section.scrollIntoView({ behavior: 'smooth' });
 
     }
 
@@ -57,23 +57,23 @@ const NavbarHeaderComp = () => {
 
           <ul id={ulId} className='flex flex-col xl:flex-row gap-3'>
             
-            {['home', 'about', 'education', 'personalskills', 'softskills', 'projects', 'contactme'].map((section) => (
+            {['home', 'about', 'education', 'personalskills', 'softskills', 'projects', 'contact me'].map((section) => (
 
-                <>
-                
-                    <li key={section} id={liId} className='list-item p-3'>
-                        
-                        <Link to={`/${section}`} className='anchor text-white font-sans font-bold text-lg text-center hover:text-red-400 duration-300' onClick={(e) => {
-                            
-                            e.preventDefault();
-
-                            scrollToSection(section);
-                        
-                        }}>{section.charAt(0).toUpperCase() + section.slice(1).replace(/skills/, ' Skills')}</Link>
+              <>
+              
+                <li key={section} id={liId} className='list-item p-3'>
                     
-                    </li>
+                  <Link to={`/${section}`} className='anchor text-white font-sans font-bold text-lg text-center hover:text-red-400 duration-300' onClick={(e) => {
+                      
+                    e.preventDefault();
+
+                    scrollToSection(section);
+                  
+                  }}>{section.charAt(0).toUpperCase() + section.slice(1).replace(/skills/, ' Skills')}</Link>
                 
-                </>
+                </li>
+              
+              </>
 
             ))}
 

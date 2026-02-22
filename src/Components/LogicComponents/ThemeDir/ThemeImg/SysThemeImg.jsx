@@ -1,12 +1,6 @@
-// react Hooks Imports:
-
 import { useId } from "react";
 
-// Component:
-
 const SystemThemeImgComp = () => {
-
-    // Component's Logic:
 
     const systemThemeBoxId = useId();
 
@@ -28,8 +22,6 @@ const SystemThemeImgComp = () => {
                             
                         </svg>
 
-    // Component's JSX:
-
     return (
 
         <>
@@ -44,8 +36,6 @@ const SystemThemeImgComp = () => {
 
     );
 
-}
-
-// COmponent's Export:
+};
 
 export default SystemThemeImgComp;

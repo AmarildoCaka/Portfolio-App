@@ -14,6 +14,8 @@ import NextJSCard from '../SoftSkillsCards/AdditionalSkillsCards/NextJSCard';
 import TypeScriptCard from '../SoftSkillsCards/AdditionalSkillsCards/TypeScriptCard';
 import JQueryCard from '../SoftSkillsCards/AdditionalSkillsCards/JQueryCard';
 import JsonCard from '../SoftSkillsCards/AdditionalSkillsCards/JsonCard';
+import ReduxCard from '../SoftSkillsCards/AdditionalSkillsCards/ReduxCard';
+import ZustandCard from '../SoftSkillsCards/AdditionalSkillsCards/ZustandCard';
 
 // Testing, Designing & Styling Skills Cards:
 
@@ -55,6 +57,10 @@ const SoftSkills = () => {
                     <TypeScriptCard/>
 
                     <JQueryCard/>
+
+                    <ZustandCard/>
+
+                    <ReduxCard/>
 
                     <JsonCard/>
 

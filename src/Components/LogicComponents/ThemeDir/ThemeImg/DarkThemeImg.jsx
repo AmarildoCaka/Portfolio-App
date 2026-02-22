@@ -1,12 +1,6 @@
-// React Hooks Imports:
-
 import { useId } from "react";
 
-// Component:
-
 const DarkThemeImgComp = () => {
-
-    // Component's Logic:
 
     const darkThemeBoxId = useId();
 
@@ -28,8 +22,6 @@ const DarkThemeImgComp = () => {
                         
                         </svg>;
 
-    // Component's JSX:
-
     return (
 
         <>
@@ -44,8 +36,6 @@ const DarkThemeImgComp = () => {
 
     );
 
-}
-
-// COmponent's Export:
+};
 
 export default DarkThemeImgComp;

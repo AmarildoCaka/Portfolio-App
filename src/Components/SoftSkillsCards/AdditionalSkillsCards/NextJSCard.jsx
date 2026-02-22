@@ -1,20 +1,15 @@
-// React Hooks Imports:
+import '../../../App.css';
 
 import { useId } from "react";
 
-// Style Imports:
-
-import '../../../App.css';
-
-// Font Awesome Imports:
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
-// Outter Imports:
-
 import { styled } from '@mui/material/styles';
+
 import Stack from '@mui/material/Stack';
+
 import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgress';
 
 const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
@@ -51,11 +46,7 @@ const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
 
 }));
 
-// Component:
-
 const NextJSCard = () => {
-
-    // Component's Logic:
     
     const cardId = useId();
 
@@ -64,8 +55,6 @@ const NextJSCard = () => {
     const contentSecionId = useId();
 
     const progressBarSection = useId();
-
-    // Component's JSX:
 
     return (
 
@@ -83,15 +72,7 @@ const NextJSCard = () => {
 
                     <div id="inner-block" className="inner-block flex flex-row justify-center items-center">
 
-                        <FontAwesomeIcon id="check-icon" className="check-icon mt-1 mr-3" icon={faCheck} style={
-                            
-                            {
-                                
-                                color: 'green'
-                                
-                            }
-                            
-                        }/>
+                        <FontAwesomeIcon id="check-icon" className="check-icon mt-1 mr-3" icon={faCheck} style={{ color: 'green' }}/>
 
                         <h3 id="skill-header" className="skill-header text-black font-bold">NextJS</h3>
 
@@ -113,13 +94,7 @@ const NextJSCard = () => {
 
                 <div id={progressBarSection} className="progress-bar-section p-6">
 
-                    <Stack spacing={2} sx={
-                        
-                        {
-                            
-                            flexGrow: 1
-                            
-                        }}>
+                    <Stack spacing={2} sx={{ flexGrow: 1 }}>
 
                         <BorderLinearProgress variant="determinate" value={80}/>
 
@@ -145,8 +120,6 @@ const NextJSCard = () => {
 
     );
 
-}
-
-// Component's Export:
+};
 
 export default NextJSCard;

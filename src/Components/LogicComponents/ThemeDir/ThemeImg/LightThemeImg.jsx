@@ -1,12 +1,6 @@
-// React Hooks Imports:
-
 import { useId } from "react";
 
-// Component:
-
 const LightThemeImgComp = () => {
-
-    // Component's Logic:
 
     const lightThemeBoxId = useId();
 
@@ -28,8 +22,6 @@ const LightThemeImgComp = () => {
 
                         </svg>;
 
-    // Component's JSX:
-
     return (
 
         <>
@@ -44,8 +36,6 @@ const LightThemeImgComp = () => {
 
     );
 
-}
-
-// Component's Export:
+};
 
 export default LightThemeImgComp;
